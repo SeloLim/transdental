@@ -22,8 +22,8 @@ export default function Testimonials() {
   return (
     <section aria-label="Clinic feedback" className="relative">
       <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
-        <FadeUp className="border-y border-border-line">
-          <div className="grid gap-8 py-8 text-center md:py-10">
+        <FadeUp className="">
+          <div className="grid text-center">
             <div className="flex items-center gap-5">
               <span className="h-px flex-1 bg-border-line" />
               <p className="font-mono text-[11px] uppercase tracking-[0.24em] text-foreground/52">
@@ -31,7 +31,7 @@ export default function Testimonials() {
               </p>
               <span className="h-px flex-1 bg-border-line" />
             </div>
-            <h2 className="mx-auto max-w-5xl font-display text-[52px] leading-[0.9] tracking-[-0.06em] text-foreground sm:text-[72px] md:text-[92px]">
+            <h2 className="mx-auto max-w-5xl font-display text-[52px] leading-[0.9] tracking-[-0.06em] text-foreground sm:text-[72px] md:text-[92px] mt-8 mb-16">
               What clinics notice {""}
               <span className="font-serif italic text-cyan">after setup.</span>
             </h2>

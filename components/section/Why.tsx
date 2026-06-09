@@ -20,10 +20,14 @@ const reasons = [
 
 export default function Why() {
   return (
-    <section id="why" aria-label="Why Transdental" className="bg-foreground text-background">
-      <div className="mx-auto max-w-7xl px-6 py-20">
+    <section
+      id="why"
+      aria-label="Why Transdental"
+      className="bg-foreground text-background"
+    >
+      <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
         <FadeUp>
-          <div className="py-8 text-center lg:py-10">
+          <div className="text-center">
             <div className="flex items-center gap-5">
               <span className="h-px flex-1 bg-background/18" />
               <p className="font-mono text-[11px] uppercase tracking-[0.24em] text-background/48">
@@ -31,11 +35,9 @@ export default function Why() {
               </p>
               <span className="h-px flex-1 bg-background/18" />
             </div>
-            <h2 className="mx-auto mt-8 max-w-6xl font-display text-[54px] leading-[0.9] tracking-[-0.06em] text-background sm:text-[74px] md:text-[104px]">
+            <h2 className="mx-auto mt-8 mb-16 max-w-6xl font-display text-[54px] leading-[0.9] tracking-[-0.06em] text-background sm:text-[74px] md:text-[104px]">
               Less {""}
-              <span className="font-serif italic text-cyan">
-                uncertainty
-              </span>
+              <span className="font-serif italic text-cyan">uncertainty</span>
               <br />
               from purchase to first patient.
             </h2>

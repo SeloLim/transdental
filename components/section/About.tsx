@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Export } from "iconsax-reactjs";
+import { ArrowRight } from "iconsax-reactjs";
 import FadeUp from "../shared/FadeUp";
 
 const cards = [
@@ -19,12 +19,8 @@ const cards = [
 
 export default function About() {
   return (
-    <section
-      id="about"
-      aria-label="About Transdental"
-      className="relative"
-    >
-      <div className="mx-auto max-w-7xl px-6 py-20 md:py-32">
+    <section id="about" aria-label="About Transdental" className="relative">
+      <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
         <div className="grid grid-cols-12 gap-y-10 md:gap-x-10">
           <FadeUp className="col-span-12 md:col-span-7">
             <p className="font-mono text-[11px] uppercase tracking-[0.24em] text-foreground/52">
@@ -51,17 +47,17 @@ export default function About() {
                   <span className="font-mono text-[11px] text-foreground/45">
                     {c.label}
                   </span>
-                  <h3 className="font-display text-[26px] leading-[1] tracking-[-0.035em] text-foreground md:text-[32px]">
+                  <h3 className="font-display text-[26px] leading-none tracking-[-0.035em] text-foreground md:text-[32px]">
                     {c.title}
                   </h3>
-                  <Export className="h-6 w-6 text-cyan transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  <ArrowRight className="rotate-315 h-6 w-6 text-cyan transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </article>
               ))}
             </div>
           </FadeUp>
 
           <FadeUp delay={0.1} className="col-span-12 md:col-span-5">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[1.75rem] border border-border-line bg-card">
+            <div className="relative aspect-4/5 overflow-hidden rounded-[1.75rem] border border-border-line bg-card">
               <Image
                 src="/about_clinic.png"
                 alt="Modern dental clinic treatment room"
@@ -76,7 +72,6 @@ export default function About() {
             </div>
           </FadeUp>
         </div>
-
       </div>
     </section>
   );

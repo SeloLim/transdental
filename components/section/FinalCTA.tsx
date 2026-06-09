@@ -9,7 +9,7 @@ export default function FinalCTA() {
     <section id="contact" aria-label="Contact" className="relative">
       <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
         <FadeUp>
-          <div className="relative overflow-hidden rounded-[2rem] border border-border-line bg-card">
+          <div className="relative overflow-hidden rounded-4xl border border-border-line bg-card">
             <div
               aria-hidden="true"
               className="pointer-events-none absolute -right-32 -top-32 h-[420px] w-[420px] rounded-full bg-white/80 blur-2xl"

@@ -4,11 +4,7 @@ import FadeUp from "../shared/FadeUp";
 
 export default function Services() {
   return (
-    <section
-      id="services"
-      aria-label="Products and services"
-      className="relative"
-    >
+    <section id="services" aria-label="Our Services">
       <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
         <FadeUp className="border-y border-border-line">
           <div className="grid lg:grid-cols-[0.92fr_1.08fr]">
@@ -19,7 +15,9 @@ export default function Services() {
                 </p>
                 <h2 className="mt-8 max-w-[11ch] font-display text-[54px] leading-[0.9] tracking-[-0.06em] text-foreground sm:text-[72px] md:text-[92px]">
                   Your operatory, {""}
-                  <span className="font-serif italic text-cyan">ready right.</span>
+                  <span className="font-serif italic text-cyan">
+                    ready right.
+                  </span>
                 </h2>
               </div>
 
@@ -42,16 +40,32 @@ export default function Services() {
                 sizes="(min-width: 1024px) 54vw, 100vw"
                 className="object-cover object-center saturate-[0.86] contrast-[0.97]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/58 via-background/4 to-white/0" />
+              <div className="absolute inset-0 bg-linear-to-t from-background/58 via-background/4 to-white/0" />
             </div>
           </div>
 
           <div className="grid border-t border-border-line md:grid-cols-4">
             {[
-              ["01", "Specify", "Rekomendasi unit sesuai ruang, budget, dan workflow."],
-              ["02", "Prepare", "Kebutuhan utility, akses, dan jadwal dibuat clear."],
-              ["03", "Install", "Pemasangan, kalibrasi, dan handover sampai siap pakai."],
-              ["04", "Care", "Support warranty, parts, dan maintenance setelah install."],
+              [
+                "01",
+                "Specify",
+                "Rekomendasi unit sesuai ruang, budget, dan workflow.",
+              ],
+              [
+                "02",
+                "Prepare",
+                "Kebutuhan utility, akses, dan jadwal dibuat clear.",
+              ],
+              [
+                "03",
+                "Install",
+                "Pemasangan, kalibrasi, dan handover sampai siap pakai.",
+              ],
+              [
+                "04",
+                "Care",
+                "Support warranty, parts, dan maintenance setelah install.",
+              ],
             ].map(([number, title, body]) => (
               <div
                 key={number}

@@ -107,7 +107,7 @@ export default function Footer() {
 
         <div aria-hidden="true" className="mt-20 select-none overflow-hidden">
           <p
-            className="font-display font-semibold leading-[0.85] tracking-[-0.05em] text-foreground"
+            className="font-display font-semibold leading-[0.85] tracking-tighter text-foreground"
             style={{ fontSize: "clamp(64px, 16vw, 220px)" }}
           >
             TRANSDENTAL
@@ -115,7 +115,9 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 flex flex-col items-start justify-between gap-3 border-t border-border-line pt-6 text-[12px] text-foreground/55 md:flex-row md:items-center">
-          <span>(C) {new Date().getFullYear()} Transdental. All rights reserved.</span>
+          <span>
+            (C) {new Date().getFullYear()} Transdental. All rights reserved.
+          </span>
           <span className="font-mono uppercase tracking-[0.18em]">
             Dental Equipment - ID
           </span>

@@ -30,7 +30,11 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <section id="faq" aria-label="Frequently asked questions" className="relative">
+    <section
+      id="faq"
+      aria-label="Frequently asked questions"
+      className="relative"
+    >
       <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
         <FadeUp className="grid gap-10 border-y border-border-line py-8 lg:grid-cols-[0.74fr_1.26fr] lg:py-10">
           <div>
